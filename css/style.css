@@ -1,0 +1,22 @@
+.headerContent {
+	background-image: url("../images/BG_Hilscher_Github.png");
+	background-size: 100% 100%;
+}
+.headerContent h1 {
+	color: black;
+}
+.headerContent h2 {
+	font-weight:300;
+	margin:0;
+	color: rgb(116, 130, 230);
+}
+.jumbotron {
+     background-color:transparent !important; 
+}
+
+body
+{
+	padding-bottom: 0;
+	background-color: #f0f0f0;
+	overflow-x: hidden;
+}
