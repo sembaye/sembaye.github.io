@@ -1,61 +1,75 @@
 <!DOCTYPE html> 
 
-<html lang="en"><head>
-    <script src="//cdn.optimizely.com/js/1141215513.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="description" content="">
     <meta name="author" content="">
+	<title>sembaye @ Github</title>
 
-    <title>sembaye @ Github</title>
-
-    <link href="./css/style.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?3.9.1/build/cssnormalize/cssnormalize-min.css&amp;3.9.1/build/cssgrids-responsive/cssgrids-responsive-min.css&amp;3.9.1/build/cssbutton/cssbutton-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-csslist/gallerycss-csslist-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-csstable/gallerycss-csstable-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/prettypages/gh-pages/ui.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/ccampbell/rainbow/master/themes/github.css">
-
+    <link  href="./css/style.css" rel="stylesheet"/>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 
-<body class="yui3-skin-sam">
-  
-<div id="headerMenu" class="yui3-menu yui3-menu-open yui3-menu-horizontal yui3-menu-fixed">
-    <ul>
-        <li><a href="https://github.com/sembaye">Fork Projects on Github</a></li>
-    </ul>
-</div>
-  
-<div class="headerContent">
-    <div class="jumbotron">
-       <div class="container">
-      <h1>sembaye</h1>
-      <h1>Open Source at GitHub</h1>
-    </div>
-</div>
+<body>
+	<div class="content">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
 
-<div class="content">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div id="wrapper">
-                    <label for="search" class="col-lg-4 control-label search" style=""><span>Search</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos..."></label>
-                    <div id="repos" class="columns collapse-group">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr>
-    </div>
-</div>
+					<div id="navcol-1" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li role="presentation">
+								<a href="https://github.com/sembaye" target="_blank">Fork us on Github</a>
+							</li>
+						</ul>				
+					</div>
+				</div>
+			</nav>	
+	
+			<div class="intro">
+				<h1 class="ui header _3cO0u"> sembaye</h1>
+				<h2 class="ui header _2aPKQ"> Open Source at GitHub</h2>
+			</div>
+	
+			<!------  boxes  ------>
+			<div class="row">
+				<div class="col-md-4 col-sm-6 item">
+					<div class="col-sm-4 shadowbutton">
+						<a href="https://github.com/Hilscher/node-red-contrib-s7comm" target="_blank">
+						<p class="name"> s7comm (Collaborator)</p>
+						<p class="description">A Node-RED node to communicate with Siemens S7 PLCs.</p></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<div id="wrapper">
+							<label for="search" class="col-lg-4 control-label search" style=""><span>Search</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos..."></label>
+							<div id="repos" class="columns collapse-group"></div>
+						</div>
+					</div>
+				</div>
+				<hr>
+		  </div>
+			
+	</div>
+	
+	<div class="footer-basic">
+		<footer>	
+			<div class="social">
 
-<footer>
-    <div class="container">
-        <p>© sembaye 2017</p>
-    </div>
-</footer>
-
+			</div>
+			<p class="copyright">sembaye © 2017</p>
+		</footer>
+	</div>
+	
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -63,7 +77,7 @@
     <script src="./js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/strftime.js"></script>
     <script type="text/javascript" src="orgs.js"></script>
-    <script type="text/javascript">
+<script type="text/javascript">
     
     var updated = [];
     var allrepos = [];
@@ -73,17 +87,11 @@
     
     (function ($, undefined) {
     	
-      var repoUrls = {
-      };
+      var repoUrls = {};
 
-      function repoUrl(repo) {
-        return repoUrls[repo.name] || repo.html_url;
-      }   
+      function repoUrl(repo) {return repoUrls[repo.name] || repo.html_url;}   
       
-      function repoDescription(repo) {
-        desc = repo.description;
-        return desc;
-      }
+      function repoDescription(repo) {desc = repo.description;return desc;}
       
       function addUpdated()
       {
@@ -257,7 +265,10 @@
       addRepos(orgs[r]);
     }
     
+    
     $("<div>").addClass("separator").appendTo("#wrapper");
+    
+
 
   })(jQuery);
   
@@ -299,12 +310,73 @@
     	}
 
     }
+    
     $(".nrepos").text("("+(n - m)+")");
+    
 
-  // Fix copyright to be the current year.
+    // ---------------------------------
+    // Google Analytics Event Tracking
+    // 
+    // 
+    // usage: add the following attributes to links you want to track:
+    //   data-analytics-category=""    REQUIRED  String   Typically the object that was interacted with (e.g. button)
+    //   data-analytics-action=""      REQUIRED  String   The type of interaction (e.g. click)
+    //   data-analytics-label=""       OPTIONAL  String   Useful for categorizing events (e.g. nav buttons)
+    //   data-analytics-value=""       OPTIONAL  Integer  Values must be non-negative. Useful to pass counts (e.g. 4 times)
+    //
+    // Those are the suggested usages, but you can use the attributes how you want
+    // see https://developers.google.com/analytics/devguides/collection/analyticsjs/events for more details
+    // 
+    // EXAMPLE:
+    // <a href="http://ibm.com" data-analytics-category="Leadspace button" data-analytics-action="To ibm.com">Off you go!</a>
+    // ---------------------------------
+    
+    $('body').on('click', 'a[data-analytics-category][data-analytics-action]', function(e){
+
+      // No analytics? Bail.
+      if ( ! window.ga )
+        return;
+      
+      // for links to external sources, we need a tiny delay to have a little extra time to send to Google's servers before unload
+      // 200ms is about right for enough time
+      if (this.hostname && this.hostname !== location.hostname) {
+        // Stop the link action
+        e.preventDefault();
+        
+        // setTimeout callback is called in the window scope, so cache the url from the link now
+        var url = this.href;
+        
+        // in 200ms, off you go
+        setTimeout(function(){
+          document.location = url;        
+        },200);
+      }
+      
+      var $el = $(this),
+          data = {'hitType': 'event'}; // make a new data object 
+          
+      // category (required string)
+      data['eventCategory'] =  $el.attr('data-analytics-category');
+      
+      // action (required string)
+      data['eventAction'] = $el.attr('data-analytics-action');
+      
+      // label (optional string)
+      if ( $el.attr('data-analytics-label') )
+        data['eventLabel'] = $el.attr('data-analytics-label');
+
+      // value (optional int)
+      if ( $el.attr('data-analytics-value') )
+        data['eventValue'] = parseInt( $el.attr('data-analytics-value') );
+
+      // send the data
+      ga('send', data);
+      
+    });
+	// Fix copyright to be the current year.
 	$('#copyright-last-year').text(new Date().getFullYear());
 });
 </script>
-
-
-</body></html>
+	
+</body>
+</html>

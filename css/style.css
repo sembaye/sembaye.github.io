@@ -1,22 +1,135 @@
-.headerContent {
-/*	background-image: url("../images/BG_Hilscher_Github.png");*/
-	background-size: 100% 100%;
+/*********   intro ***************/
+.navbar-brand{
+    background-color:inherit;
+    position: relative;
+    /*margin-top: -18px;*/
 }
-.headerContent h1 {
-	color: black;
+.navbar-link{
+    margin-top: -10px;
 }
-.headerContent h2 {
-	font-weight:300;
-	margin:0;
-	color: rgb(116, 130, 230);
+.content {
+	color: #313437;
+	background-color:#fff; 
+	padding-bottom:30px;
 }
-.jumbotron {
-     background-color:transparent !important; 
+.content .intro {
+	max-width: 1500px;
+	margin: 0 auto 60px;
+	padding-top:20px;
+}
+.ui.header {
+    border: none;
+    margin: calc(2rem - .14285em) 0 1rem;
+    padding: 0;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    line-height: 1.2857em;
+    text-transform: none;
+    color: rgba(0,0,0,.87);
+	text-align: center;
+}
+._3cO0u {
+    color: #585858 !important;
+}
+._2aPKQ {
+   color: #8d9399 !important;
 }
 
-body
-{
-	padding-bottom: 0;
-	background-color: #f0f0f0;
-	overflow-x: hidden;
+/*********   box within item ***************/
+.content .item {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
 }
+.content .item .shadowbutton { 
+    margin-bottom: 20px;
+    width: 250px;
+    height: 200px;
+    box-shadow: 5px 5px 20px -10px;
+    border: 1px solid black;
+    text-align: center;
+    overflow: hidden;
+}
+.content .item .shadowbutton .name {
+  background-color: #CC0613;
+  padding: 15px 15px;
+  color: white;
+  width: 250px;
+  position: absolute;
+  left: 0px;
+  bottom: 60px;
+  font-size: 100%;
+  font-weight: bold;
+  margin-bottom: 65px;
+}
+.content .item .shadowbutton .description {
+	font-size: 14px;
+    margin-top: 100px;
+	color: #7d8285;
+}
+
+.content .item .shadowbutton:hover {
+  -moz-box-shadow: 5px 5px 20px -10px #cc0613;
+  -webkit-box-shadow: 5px 5px 20px -10px #cc0613;
+  box-shadow: 5px 5px 20px -10px #cc0613; opacity: 0.9;
+}
+
+/*********   Footer  ***************/
+.footer-basic {
+	background-color:#ffffff; 
+	padding:40px 0;
+	color: #4b4c4d;
+}
+.footer-basic ul{
+	padding:0;
+	list-style:none;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+.footer-basic li{
+	padding:0 10px;
+}
+.footer-basic ul a{
+	color: imherit;
+	text-decoration: none;
+	opacity: 0.8;
+}
+.footer-basic ul a:hover{
+	opacity: 1;
+}
+.footer-basic .social{
+	text-align: center;
+	padding-bottom: 10px;
+}
+.footer-basic .social > a{
+	font-size: 24px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	margin: 0 8px;
+	color: inherit;
+	opacity: 0.75;
+}
+.footer-basic .social > a:hover{
+	opacity: 0.9;
+}
+.footer-basic .copyright{
+	margin-top: 15px;
+	text-align: center;
+	font-size: 13px;
+	color: #aaa;
+	margin-bottom: 0;
+}
+
+@media(max-width:767px){
+.features-clean{
+	padding-bottom: 10px;
+}
+}
+
