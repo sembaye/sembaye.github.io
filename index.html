@@ -220,6 +220,8 @@
         var $sectiontitle = $("<div>").addClass("section-title").appendTo("#wrapper");
         var $title = $("<span>").addClass('title').text("repos").appendTo($sectiontitle);
         var $repos = $("<span>").addClass('nrepos').text("(0)").appendTo($title);
+	//TODO: if number of repos fixed unhide var $repos
+		$repos.hide();
         var $item = $("<div id='allrepos'>").addClass("columns section collapse");
         $item.appendTo($sectiontitle);
         var $twistie = $("<a data-toggle='collapse' data-target='#allrepos'>").addClass("twistie showdetails");
