@@ -9,10 +9,8 @@
         {"name": "Type in User Name",
           "type":"user"},
 		  */
-		{"name": "Hilscher/netIOT-apps-netiotPN",
+		{"name": "sembaye/numberconverter",
          "type": "repo"},
-		 {"name": "Hilscher/netIOT-starterkit-azure-app",
-         "type": "repo"},
-		 {"name": "Hilscher/node-red-contrib-s7comm",
+		 {"name": "sembaye/num2hex32",
          "type": "repo"},
     ];
